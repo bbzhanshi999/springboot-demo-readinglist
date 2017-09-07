@@ -7,6 +7,7 @@
 <body>
 <h2 th:text="${taobao.taobaoId}">'s reading list</h2 >
 <h3 th:text="${taobao.username}">'s reading list</h3 >
+<img th:src="@{/1.png}" class="icon"></img>
 <div th:unless="${#lists.isEmpty(books)}">
     <dl th:each="book : ${books}">
         <dt class="bookHeadline">

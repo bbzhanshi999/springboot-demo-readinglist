@@ -32,6 +32,18 @@ public class Book {
         return reader;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", reader='" + reader + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     public void setReader(String reader) {
         this.reader = reader;
     }
